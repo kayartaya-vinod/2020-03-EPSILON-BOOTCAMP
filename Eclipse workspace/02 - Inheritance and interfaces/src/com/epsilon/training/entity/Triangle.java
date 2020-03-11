@@ -1,5 +1,6 @@
 package com.epsilon.training.entity;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import lombok.Getter;
@@ -28,5 +29,20 @@ public class Triangle extends Shape {
 		double area = 0.5 * base * height;
 		logger.info("Area of the triangle = " + area + " sq.units");
 	}
+	
+	public void printTriangleInfo() {
+		logger.log(Level.INFO, "Base = " + base);
+		logger.log(Level.INFO, "Height = " + height);
+		logger.log(Level.INFO, "Area = " + (0.5 * base * height));
+	}
 
 }
+
+
+
+
+
+
+
+
+
