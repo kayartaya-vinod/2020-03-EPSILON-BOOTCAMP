@@ -9,7 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-// finall classes cannot be extended
+// final classes cannot be extended
 public final class Circle extends Shape {
 
 	private double radius;

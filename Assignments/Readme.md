@@ -559,22 +559,22 @@ System.out.println(m3);
 
 Create the following classes in the respective packages.
 
-* Class com.slk.assignment22.utils.KeyboardUtil
-* Class com.slk.assignment22.utils.DateUtil
-* Enum com.slk.assignment22.entity.Gender
-* Class com.slk.assignment22.entity.Contact
-* Class com.slk.assignment22.dao.DaoException
-* Interface com.slk.assignment22.dao.ContactsDao
-* Class com.slk.assignment22.dao.DaoFactory
-* Class com.slk.assignment22.dao.impl.ContactsDaoHashMapImpl
+* Class com.epsilon.assignment22.utils.KeyboardUtil
+* Class com.epsilon.assignment22.utils.DateUtil
+* Enum com.epsilon.assignment22.entity.Gender
+* Class com.epsilon.assignment22.entity.Contact
+* Class com.epsilon.assignment22.dao.DaoException
+* Interface com.epsilon.assignment22.dao.ContactsDao
+* Class com.epsilon.assignment22.dao.DaoFactory
+* Class com.epsilon.assignment22.dao.impl.ContactsDaoHashMapImpl
 
 The code for the above classes/interfaces are shared below.
 #### Note: DO NOT CHANGE THE CODE FOR THESE CLASSES/INTERFACES (except ContactsDaoHashMapImpl)
 
-Class *com.slk.assignment22.utils.KeyboardUtil*
+Class *com.epsilon.assignment22.utils.KeyboardUtil*
 
 ```java
-package com.slk.assignment22.utils;
+package com.epsilon.assignment22.utils;
 
 import java.util.Date;
 import java.util.Scanner;
@@ -612,10 +612,10 @@ public final class KeyboardUtil {
 ```
 
 
-Class *com.slk.assignment22.utils.DateUtil*
+Class *com.epsilon.assignment22.utils.DateUtil*
 
 ```java
-package com.slk.assignment22.utils;
+package com.epsilon.assignment22.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -654,10 +654,10 @@ public final class DateUtil {
 
 ```
 
-Enum: *com.slk.assignment22.entity.Gender*
+Enum: *com.epsilon.assignment22.entity.Gender*
 
 ```java
-package com.slk.assignment22.entity;
+package com.epsilon.assignment22.entity;
 
 public enum Gender {
 	MALE, FEMALE
@@ -665,7 +665,7 @@ public enum Gender {
 
 ```
 
-Class: *com.slk.assignment22.entity.Contact*
+Class: *com.epsilon.assignment22.entity.Contact*
 
 ```java
 public class Contact {
@@ -703,10 +703,10 @@ public class Contact {
 }
 ```
 
-Class *com.slk.assignment22.dao.DaoException*
+Class *com.epsilon.assignment22.dao.DaoException*
 
 ```java
-package com.slk.assignment22.dao;
+package com.epsilon.assignment22.dao;
 
 public class DaoException extends Exception {
 
@@ -728,15 +728,15 @@ public class DaoException extends Exception {
 
 ```
 
-Interface *com.slk.assignment22.dao.ContactsDao*
+Interface *com.epsilon.assignment22.dao.ContactsDao*
 
 ```java
-package com.slk.assignment22.dao;
+package com.epsilon.assignment22.dao;
 
 import java.util.Date;
 import java.util.List;
 
-import com.slk.assignment22.entity.Contact;
+import com.epsilon.assignment22.entity.Contact;
 
 public interface ContactsDao {
 	// CRUD operations
@@ -755,12 +755,12 @@ public interface ContactsDao {
 }
 ```
 
-Interface *com.slk.assignment22.dao.DaoFactory*
+Interface *com.epsilon.assignment22.dao.DaoFactory*
 
 ```java
-package com.slk.assignment22.dao;
+package com.epsilon.assignment22.dao;
 
-import com.slk.assignment22.dao.impl.ContactsDaoHashMapImpl;
+import com.epsilon.assignment22.dao.impl.ContactsDaoHashMapImpl;
 
 public final class DaoFactory {
 
@@ -790,9 +790,9 @@ public final class DaoFactory {
 ```
 
 
-Create a class com.slk.assignment22.dao.impl.ContactsDaoHashMapIpml that implements the interface com.slk.assignment22.dao.ContactsDao, and implement the abstract functions inherited from the interface. The class must have a variable of *java.util.Map* type and must be initialized to an instance of *java.util.HashMap*. The methods from the interface which are implemented here must make use of this *map* to store and retrieve the *Contact* data. When implemented properly, the application should work properly as expected.
+Create a class com.epsilon.assignment22.dao.impl.ContactsDaoHashMapIpml that implements the interface com.epsilon.assignment22.dao.ContactsDao, and implement the abstract functions inherited from the interface. The class must have a variable of *java.util.Map* type and must be initialized to an instance of *java.util.HashMap*. The methods from the interface which are implemented here must make use of this *map* to store and retrieve the *Contact* data. When implemented properly, the application should work properly as expected.
 
-class *com.slk.assignment22.dao.impl.ContactsDaoHashMapIpml* 
+class *com.epsilon.assignment22.dao.impl.ContactsDaoHashMapIpml* 
 
 ```java
 public class ContactsDaoHashMapIpml implements ContactsDao {
@@ -811,21 +811,21 @@ public class ContactsDaoHashMapIpml implements ContactsDao {
 Once the above class is created make sure to update the *DaoFactory* to return a new instance of ContactsDaoHashMapImpl.
 
 
-The code for the main class *com.slk.assignment22.programs.Main* is listed below:
+The code for the main class *com.epsilon.assignment22.programs.Main* is listed below:
 
 ```java
-package com.slk.assignment22.programs;
+package com.epsilon.assignment22.programs;
 
 import java.util.Date;
 import java.util.List;
 
-import com.slk.assignment22.dao.ContactsDao;
-import com.slk.assignment22.dao.DaoException;
-import com.slk.assignment22.dao.DaoFactory;
-import com.slk.assignment22.entity.Contact;
-import com.slk.assignment22.entity.Gender;
-import com.slk.assignment22.utils.DateUtil;
-import com.slk.assignment22.utils.KeyboardUtil;
+import com.epsilon.assignment22.dao.ContactsDao;
+import com.epsilon.assignment22.dao.DaoException;
+import com.epsilon.assignment22.dao.DaoFactory;
+import com.epsilon.assignment22.entity.Contact;
+import com.epsilon.assignment22.entity.Gender;
+import com.epsilon.assignment22.utils.DateUtil;
+import com.epsilon.assignment22.utils.KeyboardUtil;
 
 public class Main {
 
@@ -1176,25 +1176,25 @@ Run the above class as a Java Application and test each of the operations.
 
 ### Assignment 23
 
-Create a class `com.slk.assignment22.dao.impl.ContactsDaoCsvImpl` that implements the interface `com.slk.assignment22.dao.ContactsDao`, such that the data is now stored in a CSV file.
+Create a class `com.epsilon.assignment22.dao.impl.ContactsDaoCsvImpl` that implements the interface `com.epsilon.assignment22.dao.ContactsDao`, such that the data is now stored in a CSV file.
 
 *Note: Avoid unnecessary read/write operations on the file*
 
 Hint: 
 * You may write some private helper methods for read/write operations and call them at appropriate locations of the overridden functions.
-* Update the `com.slk.assignment22.dao.DaoFactory` with necessary code
+* Update the `com.epsilon.assignment22.dao.DaoFactory` with necessary code
 
 ### Assignment 24
 
-Create a class `com.slk.assignment22.dao.impl.ContactsDaoBinaryImpl` that implements the interface `com.slk.assignment22.dao.ContactsDao`, such that the data is now stored in a binary file. 
+Create a class `com.epsilon.assignment22.dao.impl.ContactsDaoBinaryImpl` that implements the interface `com.epsilon.assignment22.dao.ContactsDao`, such that the data is now stored in a binary file. 
 
-Make the class `com.slk.assignment22.entity.Contact` a serializable class.
+Make the class `com.epsilon.assignment22.entity.Contact` a serializable class.
 
 *Note: Avoid unnecessary read/write operations on the file*
 
 Hint: 
 * You may write some private helper methods for read/write operations and call them at appropriate locations of the overridden functions.
-* Update the `com.slk.assignment22.dao.DaoFactory` with necessary code
+* Update the `com.epsilon.assignment22.dao.DaoFactory` with necessary code
 
 ---
 
@@ -1367,15 +1367,15 @@ Also, provide a hyperlink to go back to the homepage.
 
 Create the following classes and interfaces for the working of the above application
 
-* Entity class - com.slk.training.entity.Product
-* Dao interface - com.slk.training.dao.ProductDao (containing the methods listed below)
+* Entity class - com.epsilon.training.entity.Product
+* Dao interface - com.epsilon.training.dao.ProductDao (containing the methods listed below)
 	* public Product getProductById(int id) throws DaoException
 	* public List<Product> getAllProducts() throws DaoException
 	* public List<Product> getProductsByCategory(String category) throws DaoException
-* Dao factory class - com.slk.training.dao.DaoFactory (containing the methods listed below)
+* Dao factory class - com.epsilon.training.dao.DaoFactory (containing the methods listed below)
 	* public static ProductDao getProductDao() throws DaoExceptoion (returns an instance of ProductDaoJdbcImpl)
-* Dao implementation class - com.slk.training.dao.impl.ProductDaoJdbcImpl implements com.slk.training.dao.ProductDao
-* Servlet class - com.slk.training.web.ProductsByCategoryServlet
+* Dao implementation class - com.epsilon.training.dao.impl.ProductDaoJdbcImpl implements com.epsilon.training.dao.ProductDao
+* Servlet class - com.epsilon.training.web.ProductsByCategoryServlet
 	* The doGet(..) of this servlet uses the DaoFactory to get a ProductDao instance using which the search is done
 
 Note:
