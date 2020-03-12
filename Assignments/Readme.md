@@ -1389,7 +1389,7 @@ Note:
 
 Create a Java application to do the following:
 
-1. Read **id, name, email, phone, address, city** from the user in a loop
+1. Read the **id, name, email, phone, address, city** of a person, from the user in a loop
 2. The loop should be terminated after asking the user if he/she wants to quit, and the user says **Yes**
 3. All the user details should be stored in a CSV (comma separated values) file
    1. In a CSV file, the records are separated by a new-line, 
