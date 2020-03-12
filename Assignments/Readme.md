@@ -1381,3 +1381,30 @@ Create the following classes and interfaces for the working of the above applica
 Note:
 
 * copy and paste the `h2-1.4.xxx.jar` into `WebContent/WEB-INF/lib` directory, and the JAR file will be automatically be in the CLASSPATH
+
+
+---
+
+### Assignment 28
+
+Create a Java application to do the following:
+
+1. Read id, name, email, phone, address, city from the user in a loop
+2. The loop should be terminated after asking the user if he/she wants to quit, and the user says 'Yes'
+3. All the user details should be stored in a CSV (comma separated values) file
+   1. In a CSV file, the records are separated by a new-line, 
+   2. and values of the records are separated by a comma
+   3. Note that the value themselves may contain a comma (for example address field may contain comma)
+
+An example record:
+
+* id=**1**
+* name=**Vinod Kumar**
+* email=**vinod@vinod.co**
+* phone=**9731424784**
+* address=**1st crs, 1st mn, ISRO lyt**
+* city=**Bangalore**
+
+
+Once the file is created, open the same in Microsoft Excel and verify the same. If you run the application again, the previos data should be preserved.
+
